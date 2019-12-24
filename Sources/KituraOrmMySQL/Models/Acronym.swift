@@ -8,11 +8,11 @@
 import SwiftKueryORM
 
 struct Acronym: Model {    
-    var id: Int = 0
+    var id: Int?
     var shortValue: String?
     var longValue: String?
     
-    var autorFk: Int = 0
+    var autorFk: Int?
     
     // override standard table name 'Acronym'
     static var tableName: String = "acronyms"

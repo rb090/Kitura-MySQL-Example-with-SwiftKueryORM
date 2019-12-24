@@ -18,7 +18,7 @@ class AcronymPersistence {
             }
             
             // maybe we have no autor reference saved for our acronyms
-            guard let autorIds = acronyms?.filter({ $0.autorFk > 0 }).compactMap({ $0.autorFk }) else {
+            guard let autorIds = acronyms?.filter({ $0.autorFk! > 0 }).compactMap({ $0.autorFk }) else {
                 var acronymsWithoutAutor = [AcronymResult]()
                 
                 acronyms?.forEach({ (acronym) in
@@ -66,7 +66,10 @@ class AcronymPersistence {
     }
     
     static func update(_ acronym: Acronym, callback: @escaping (_ acronym: Acronym?, _ error: Error?) -> Void) {
-        acronym.update(id: acronym.id) { (acronym, error) in
+        guard let id = acronym.id else { return }
+        
+        // we do not need the id from the json body here, we get it from the url at the moment
+        acronym.update(id: id) { (acronym, error) in
             if let errorValue = error {
                 Log.error("Cannot update acronym here: \(errorValue)")
             }
