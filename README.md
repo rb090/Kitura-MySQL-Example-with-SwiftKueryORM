@@ -24,6 +24,8 @@ brew install kitura
 kitura init
 ```
 
+It is also necessary to have MySQL installed on your machine. After installing and setup you can create a database (for example `swiftBackendTest`) and import the dump sql file from this project. After that this project should work on your machine.
+
 ### Methods working after Setup:
 
 - GET Request: 
@@ -49,4 +51,4 @@ curl -k -X POST http://localhost:8080/acronyms -H 'content-type: application/jso
 
 ## License 
 
-Distributed under the Apache License. Please see LICENSE file for further information.
+This project is published under the Apache 2.0 license
