@@ -46,3 +46,7 @@ curl -X DELETE http://localhost:8080/acronyms/2 | jsonpp
 ```
 curl -k -X POST http://localhost:8080/acronyms -H 'content-type: application/json' -d '{"shortValue":"DE", "longValue":"Germany"}' | jsonpp
 ```
+
+## License 
+
+Distributed under the Apache License. Please see LICENSE file for further information.
