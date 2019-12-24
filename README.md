@@ -26,7 +26,7 @@ kitura init
 
 ### Methods working after Setup:
 
-- GET Request: `curl -k -H 'Auth-Header-Hash: testtest' https://localhost:8090/acronyms | jsonpp
-- PUT Request: `curl -X PUT http://localhost:8080/acronyms/2 -H 'content-type: application/json' -d '{"shortValue":"VG", "longValue":"Viele Grueeeeessseeee"}' | jsonpp`
-- DELETE Request: `curl -X DELETE http://localhost:8080/acronyms/2 | jsonpp` 
-- POST Request: `curl -k -X POST http://localhost:8080/acronyms -H 'content-type: application/json' -d '{"shortValue":"DE", "longValue":"Germany", "autor": {"id": 1}}' | jsonpp`
+- GET Request: ```curl -k -H 'Auth-Header-Hash: testtest' https://localhost:8090/acronyms | jsonpp```
+- PUT Request: ```curl -X PUT http://localhost:8080/acronyms/2 -H 'content-type: application/json' -d '{"shortValue":"VG", "longValue":"Viele Grueeeeessseeee"}' | jsonpp```
+- DELETE Request: ```curl -X DELETE http://localhost:8080/acronyms/2 | jsonpp```
+- POST Request: ```curl -k -X POST http://localhost:8080/acronyms -H 'content-type: application/json' -d '{"shortValue":"DE", "longValue":"Germany", "autor": {"id": 1}}' | jsonpp`
