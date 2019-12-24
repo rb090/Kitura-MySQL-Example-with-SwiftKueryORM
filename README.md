@@ -7,7 +7,7 @@ The class HeaderMiddleware.swift contains a small example how to use a Header fo
 
 In the App class (Application.swift) is also an example how https certificates can be used for the Kitura backend (method `run`). 
 
-##Setup this project
+### Setup this project
 
 After cloning this project it is necessary to do the following steps:
 
@@ -24,7 +24,7 @@ brew install kitura
 kitura init
 ```
 
-##Methods working after Setup:
+### Methods working after Setup:
 
 - GET Request: `curl -k -H 'Auth-Header-Hash: testtest' https://localhost:8090/acronyms | jsonpp
 - PUT Request: `curl -X PUT http://localhost:8080/acronyms/2 -H 'content-type: application/json' -d '{"shortValue":"VG", "longValue":"Viele Grueeeeessseeee"}' | jsonpp`
