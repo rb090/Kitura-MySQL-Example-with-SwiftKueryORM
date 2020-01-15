@@ -1,11 +1,21 @@
 # KituraOrmMySQL
-A small project demonstrating the usage of the Kitura Backend with MySQL
+A small project demonstrating the usage of the Kitura Swift frameworks with MySQL.
 
 After reading this great article from raywenderlich.com https://www.raywenderlich.com/1079484-kitura-tutorial-getting-started-with-server-side-swift I decided to create a small sample project which shows how to setup an API Interface with a MySQL database. 
 
 The class HeaderMiddleware.swift contains a small example how to use a Header for example to pass a authentication hash to secure the API. An algorithm for authentication is not implemented yet. But the main goal was to show how it can be used in a Kitura Backend. The usage can be found in AcronymRoutes.swift in the method `getAcronyms`. 
 
 In the App class (Application.swift) is also an example how https certificates can be used for the Kitura backend (method `run`). 
+
+### Frameworks used:
+
+The project contains the following components:
+
+- Kitura: https://github.com/IBM-Swift/Kitura.git
+- HeliumLogger: https://github.com/IBM-Swift/HeliumLogger.git
+- SwiftKueryMySQL: https://github.com/IBM-Swift/SwiftKueryMySQL.git
+- Swift-Kuery: https://github.com/IBM-Swift/Swift-Kuery.git
+- Swift-Kuery-ORM: https://github.com/IBM-Swift/Swift-Kuery-ORM.git
 
 ### Setup this project
 
