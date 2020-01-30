@@ -1,4 +1,4 @@
-# KituraOrmMySQL
+# Kitura with SwiftKueryORM and MySQL database
 A small project demonstrating the usage of the Kitura Swift frameworks with MySQL.
 
 After reading this great article from raywenderlich.com https://www.raywenderlich.com/1079484-kitura-tutorial-getting-started-with-server-side-swift I decided to create a small sample project which shows how to setup an API Interface with a MySQL database. 
